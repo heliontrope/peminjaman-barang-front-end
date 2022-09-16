@@ -1,0 +1,39 @@
+@mixin padding($px, $py) {
+  &.px {
+    padding: 0 $px 0 $px;
+
+    &.py {
+      padding: $py $px $py $px;
+    }
+  }
+
+  &.py {
+    padding: $py 0 $py 0;
+  }
+}
+
+@mixin width($width) {
+  width: $width;
+
+  &.\35 0 {
+    width: 50% !important;
+  }
+
+  &.\32 5 {
+    width: 25% !important;
+  }
+
+  &.\37 5 {
+    width: 75%;
+  }
+}
+
+@mixin gap($gap) {
+  &.x-gap {
+    row-gap: $gap;
+  }
+
+  &.y-gap {
+    column-gap: $gap;
+  }
+}

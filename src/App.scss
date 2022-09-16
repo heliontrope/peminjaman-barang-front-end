@@ -1,0 +1,61 @@
+@use "components/login.scss";
+@import "mixins";
+
+.welcome-text {
+  font-size: 1.5rem;
+
+  &.main {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &.signup {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &.\31rem {
+    font-size: 1rem;
+  }
+  &.sec {
+    font-size: 0.75rem;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+
+  @include gap(2rem);
+  // @include padding(4rem, 1rem);
+
+  padding: 2rem 4rem 2rem 4rem;
+
+  &.half {
+    width: 50%;
+  }
+
+  &.flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  &.min-screen {
+    min-height: 100vh;
+  }
+
+  &.screen {
+    height: 100vh;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}

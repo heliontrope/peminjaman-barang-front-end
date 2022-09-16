@@ -1,0 +1,133 @@
+@import "../colors";
+@import "../mixins";
+
+.relative {
+  position: relative;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.welcome-text {
+  font-size: 12px;
+
+  &.main {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.container {
+  height: 100%;
+
+  @include width(100%);
+
+  @include gap(1.25rem);
+
+  &.gap {
+    gap: 1rem;
+  }
+
+  &.h-fit {
+    height: fit-content;
+  }
+
+  &.flex {
+    display: flex;
+
+    &.jucen {
+      justify-content: center;
+    }
+
+    &.juven {
+      justify-content: space-evenly;
+    }
+
+    &.icen {
+      align-items: center;
+    }
+  }
+
+  &.col {
+    flex-direction: column;
+  }
+
+  &.signup {
+    gap: 1rem;
+  }
+
+  @include padding(2rem, 2rem);
+}
+
+.welcome-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  border: none;
+  padding: 1.5rem;
+  font-size: 1.15rem;
+  transition: color 150ms;
+
+  &.main {
+    background-color: $main_button_color;
+    cursor: pointer;
+  }
+
+  &.main:hover {
+    background-color: $main_button_color_hover;
+    color: black;
+  }
+
+  &.second {
+    background-color: $second_button_color;
+    cursor: pointer;
+  }
+
+  &.second:hover {
+    background-color: $second_button_color_hover;
+    color: black;
+  }
+
+  &.white {
+    color: white;
+  }
+
+  &.round {
+    border-radius: 0.4rem;
+  }
+
+  &.hidden {
+    visibility: hidden;
+  }
+
+  &.static {
+    position: static;
+  }
+}
+
+input {
+  width: 100%;
+  &[type="password"] {
+    position: relative;
+  }
+
+  // &::placeholder {
+  //   font-size: 1.05rem;
+  // }
+
+  padding: 0.9rem 0.4rem 0.9rem 0.4rem;
+}
+
+input:focus {
+  border: 2px solid $main_button_color;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 1rem;
+  top: 33%;
+  font-size: 1rem;
+}
