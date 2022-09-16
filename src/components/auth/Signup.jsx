@@ -2,8 +2,8 @@ import React from "react";
 
 const Signup = () => {
   return (
-    <div className="wrapper px x-gap screen">
-      <div className="container flex col signup welcome-text">
+    <div className="wrapper px  x-gap screen" style={{ paddingTop: "1rem" }}>
+      <div className="container flex col signup grow welcome-text">
         <div>
           <p className="welcome-text signup">Buat Akun Baru</p>
         </div>
@@ -23,11 +23,11 @@ const Signup = () => {
         <input type="text" name="No Whattsapp" placeholder="No Whattsapp" />
         <input type="text" name="Alamat" placeholder="Alamat" />
         <input type="text" name="Kelas" placeholder="Kelas" />
-      </div>
-      <div className="container flex col h-fit">
-        <button className="welcome-button py round main white static">
-          Daftar
-        </button>
+        <div className="container">
+          <button className="welcome-button py round main white ">
+            Daftar
+          </button>
+        </div>
       </div>
     </div>
   );

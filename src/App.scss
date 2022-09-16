@@ -1,6 +1,12 @@
 @use "components/login.scss";
 @import "mixins";
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 .welcome-text {
   font-size: 1.5rem;
 
@@ -32,9 +38,9 @@
   width: 100%;
 
   @include gap(2rem);
-  // @include padding(4rem, 1rem);
+  @include padding(4rem, 2rem);
 
-  padding: 2rem 4rem 2rem 4rem;
+  // padding: 2rem 4rem 2rem 4rem;
 
   &.half {
     width: 50%;
@@ -44,18 +50,33 @@
     display: flex;
     justify-content: center;
   }
+  &.jubet {
+    justify-content: space-between;
+  }
 
   &.min-screen {
     min-height: 100vh;
+  }
+
+  &.jucen {
+    justify-content: center;
+  }
+
+  &.icen {
+    align-items: center;
   }
 
   &.screen {
     height: 100vh;
   }
 
+  &.relative {
+    position: relative;
+  }
+
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  // justify-content: space-between;
   align-items: center;
   background-color: white;
 }
