@@ -2,7 +2,7 @@ import React from "react";
 
 const Signup = () => {
   return (
-    <div className="wrapper px  x-gap screen" style={{ paddingTop: "1rem" }}>
+    <div className="wrapper px py  x-gap screen" style={{ paddingTop: "1rem" }}>
       <div className="container flex col signup grow jubet">
         <div>
           <p className="welcome-text signup">Buat Akun Baru</p>
